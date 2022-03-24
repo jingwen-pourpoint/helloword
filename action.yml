@@ -1,0 +1,13 @@
+name: 'Hello World Action'
+description: 'Send a hello word in a runner'
+inputs:
+  name:
+    description: 'La personne a dire bonjour'
+    required: true
+    default: 'Jingwen'
+outputs:
+  response:
+    description: 'Reponse de l'action'
+runs:
+  using: 'node16'
+  main: 'index.js'
